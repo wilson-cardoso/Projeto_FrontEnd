@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-}
-
 header {
     padding: 16px 0;
     text-align: center;
@@ -22,6 +18,14 @@ header {
     max-width: 1360px;
     width: 100%;
     margin: 0 auto;    
+}
+
+.foto img {
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
 }
 
 header p {
@@ -43,12 +47,13 @@ header nav {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 80px auto;
 }
 
 header nav li {
     display: inline;
     margin-left: 22px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 header nav li a {
@@ -56,22 +61,20 @@ header nav li a {
     text-decoration: none;    
 }
 
-.foto img {
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 35px;
+header nav li a:hover{
+    background-color: #3b5291;
 }
 
 .capas {
     text-align: center;
     margin-top: 40px;
-    font-family: "Libre Baskerville", serif;
+    font-family: 'Libre Baskerville';
+    font-style: oblique;
 }
 
 .capas h2 {
-    margin-bottom: 30px;
+    margin: 100px auto;
+    font-size: 50px;
 }
 
 .capas ul {
@@ -90,14 +93,71 @@ header nav li a {
     height: auto;
 }
 
+section .container h2 {
+    margin: 80px 80px;
+    font-size: 40px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-met {
+    display: flex;
+    margin: 35px 50px;
+    justify-content: space-between;
+    font-family: 'Libre Baskerville';
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    background-color: #48474e;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3b5291;
+}
+
+
+
+section .container h3 {
+    margin:  25px auto;
+    font-size: 30px;
+}
+
 .social img {
     height: 26px;
 }
 
 .social li {
-    display: inline-block;
-    margin-right: 8px; 
-    justify-content: space-between;
-    
+    display: inline;
+    margin-right: 16px;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    padding: 16px;
+    margin: 0 auto;
 }
 
